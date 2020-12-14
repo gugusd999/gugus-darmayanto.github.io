@@ -138,7 +138,7 @@ kontak(){
     var link = [
         "https://t.me/gugusdarmayanto",
         "https://wa.me/+6285800455338",
-        "https://wa.me/+6285800455338"
+        "https://web.facebook.com/gugus.darmayanto.9"
     ];
 
     for (let ax = 0; ax < icon.length; ax++) {
