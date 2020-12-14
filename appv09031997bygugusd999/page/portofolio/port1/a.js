@@ -84,6 +84,38 @@ keahlian(){
 
 }
 
+
+project(){
+
+    var path = './asset/project-pernah-dibuat/';
+
+    var datagambar = [
+        "bpkbmotorku.png",
+        "ekonseling.png",
+        "manusantara.png",
+        "sinarmutiarapalem.png",
+        "glearn-2.png",
+        "sipintar.png",
+        "yuk-design.png"
+    ];
+
+
+    for (let ax = 0; ax < datagambar.length; ax++) {
+        this.getid('galery').innerHTML += `
+            <div class="col-sm-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="thumb" style="--background: url('${path + datagambar[ax]}')"></div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+
+}
+
+
 run(){
     this.timeshow();
     setInterval(() => {
@@ -118,5 +150,5 @@ run(){
         'font-size': 'calc(20px + 1.5vw)'
     })
     this.keahlian();
-    this.galery();
+    this.project()
 }
