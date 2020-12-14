@@ -99,6 +99,16 @@ project(){
         "yuk-design.png"
     ];
 
+    var datanama = [
+        "BPKB Motorku",
+        "Ekonseling",
+        "Manusantara",
+        "Sinarmutiarapalem",
+        "Glearn",
+        "Sipintar",
+        "Yuk-design"
+    ]
+
 
     for (let ax = 0; ax < datagambar.length; ax++) {
         this.getid('galery').innerHTML += `
@@ -106,6 +116,9 @@ project(){
                 <div class="card">
                     <div class="card-body text-center">
                         <div class="thumb" style="--background: url('${path + datagambar[ax]}')"></div>
+                        <div class="text-center mt-3">
+                            <span>${datanama[ax]}<span>
+                        </div>
                     </div>
                 </div>
             </div>
