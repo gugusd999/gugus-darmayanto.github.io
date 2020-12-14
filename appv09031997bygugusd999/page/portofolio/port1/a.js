@@ -135,18 +135,23 @@ kontak(){
         'fab fa-facebook'
     ];
 
+    var link = [
+        "https://t.me/gugusdarmayanto",
+        "https://wa.me/+6285800455338",
+        "https://wa.me/+6285800455338"
+    ];
+
     for (let ax = 0; ax < icon.length; ax++) {
         this.getid('kontak-data').innerHTML += `
-            <div style="cursor:pointer;" class="col-12 mb-4">
+            <a href="${link[ax]}" style="cursor:pointer;" class="col-12 mb-4">
                 <div class="card">
                     <div class="card-body text-center">
                         <i style="font-size: 20px;" class="${icon[ax]}"></i>
                     </div>
                 </div>
-            </div>
+            </a>
         `;
     }
-
 }
 
 run(){
