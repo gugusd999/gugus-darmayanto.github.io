@@ -13,11 +13,15 @@ goDemo(){
     alert('demo port')
 }
 
+openmenu(){
+    $("#modalmenu").modal('show');
+}
+
 galery(){
 
     for (let ax = 0; ax < 6; ax++) {
         this.getid('galery').innerHTML += `
-            <div class="col-sm-4 mb-4">
+            <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h4>Title</h4>
@@ -29,6 +33,22 @@ galery(){
         `;
     }
 
+}
+
+scrollb(eve){
+    $("#modalmenu").modal('toggle');
+    var id = eve.getAttribute('href').replace('#', '');
+    var element = document.getElementById(id);
+    var headerOffset = 80;
+    var elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    var offsetPosition = elementPosition - headerOffset;
+
+    console.log(elementPosition);
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
 }
 
 scroll(eve){
@@ -122,7 +142,7 @@ project(){
 
     for (let ax = 0; ax < datagambar.length; ax++) {
         this.getid('galery').innerHTML += `
-            <div class="col-sm-4 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body text-center">
                         <div class="thumb" style="--background: url('${path + datagambar[ax]}')"></div>

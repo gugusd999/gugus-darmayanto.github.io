@@ -19,8 +19,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-light text-white bg-blue-light fixed-top">
     <a class="navbar-brand" href="#">Gugus Darmayanto</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button onclick="cf.fn('openmenu', this); return false;" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -121,3 +122,30 @@
         </div>
     </div>
 </section>
+<div class="modal" tabindex="-1" role="dialog" id="modalmenu">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#home">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;"
+                            href="#keahlian-scroll">Keahlian
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#galeri">Galeri Karya
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#kontak">Kontak <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
