@@ -31,6 +31,21 @@ galery(){
 
 }
 
+scroll(eve){
+    var id = eve.getAttribute('href').replace('#', '');
+    var element = document.getElementById(id);
+    var headerOffset = 80;
+    var elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    var offsetPosition = elementPosition - headerOffset;
+
+    console.log(elementPosition);
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+}
+
 keahlian(){
 
     var path = './asset/portofolio/01/';
