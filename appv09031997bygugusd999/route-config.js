@@ -36,47 +36,7 @@ root.verify = function (a) {
 
 }
 
-
-root.get('/wp-login', function () {
-  var arg = arguments;
-  loadCss(dataCssAdmin, function () {
-    loadPage([
-      'page/wp-login/a',
-    ], function () {
-      loadJs(dataJsAdmin, function () {
-        rootCall('page/wp-login/a', arg);
-      })
-    })
-  })
-})
-
-root.get('/wp-register', function () {
-  var arg = arguments;
-  loadCss(dataCssAdmin, function () {
-    loadPage([
-      'page/wp-register/a',
-    ], function () {
-      loadJs(dataJsAdmin, function () {
-        rootCall('page/wp-register/a', arg);
-      })
-    })
-  })
-})
-
 root.get('/', function () {
-  var arg = arguments;
-  loadCss(dataCssAdmin, function () {
-    loadPage([
-      'page/landing/a',
-    ], function () {
-      loadJs(dataJsAdmin, function () {
-        rootCall('page/landing/a', arg);
-      })
-    })
-  })
-})
-
-root.get('/portofolio', function () {
   var arg = arguments;
   loadCss(dataCssAdmin, function () {
     loadPage([
@@ -88,52 +48,6 @@ root.get('/portofolio', function () {
     })
   })
 })
-
-root.get('/project', function () {
-  var arg = arguments;
-  loadCss(dataCssAdmin, function () {
-    loadPage([
-      'page/nav/nav2',
-      'page/project/a',
-      'page/nav/foo2',
-    ], function () {
-      loadJs(dataJsAdmin, function () {
-        rootCall('page/project/a', arg);
-      })
-    })
-  })
-})
-
-root.get('/project-menu', function () {
-  var arg = arguments;
-  loadCss(dataCssAdmin, function () {
-    loadPage([
-      'page/nav/nav2',
-      'page/project-menu/a',
-      'page/nav/foo2',
-    ], function () {
-      loadJs(dataJsAdmin, function () {
-        rootCall('page/project-menu/a', arg);
-      })
-    })
-  })
-})
-
-root.get('/migration', function () {
-  var arg = arguments;
-  loadCss(dataCssAdmin, function () {
-    loadPage([
-      'page/nav/nav2',
-      'page/migration/a',
-      'page/nav/foo2',
-    ], function () {
-      loadJs(dataJsAdmin, function () {
-        rootCall('page/migration/a', arg);
-      })
-    })
-  })
-})
-
 
 // halaman pertama kali di load
 root.start('/');
