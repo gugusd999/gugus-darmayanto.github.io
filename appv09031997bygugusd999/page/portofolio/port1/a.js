@@ -135,6 +135,12 @@ kontak(){
         'fab fa-facebook'
     ];
 
+    var nama = [
+        "Telegram",
+        "Whatsapp",
+        "Facebook"
+    ];
+
     var link = [
         "https://t.me/gugusdarmayanto",
         "https://wa.me/+6285800455338",
@@ -146,7 +152,7 @@ kontak(){
             <a href="${link[ax]}" style="cursor:pointer;" class="col-12 mb-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <i style="font-size: 20px;" class="${icon[ax]}"></i>
+                        <i style="font-size: 20px;" class="${icon[ax]}"></i> ${nama[ax]}
                     </div>
                 </div>
             </a>
