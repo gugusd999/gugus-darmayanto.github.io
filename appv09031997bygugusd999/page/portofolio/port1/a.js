@@ -110,6 +110,16 @@ project(){
     ];
 
 
+    var link = [
+        "http://bpkbmotorku.com/",
+        "http://ekonseling.yuk-design.com/ekonseling/",
+        "http://manusantara.com/",
+        "http://sinarmutiarapalem.com/",
+        "https://gugusd999.github.io/glearn.github.io/#/",
+        "http://sipintar.yuk-design.com/",
+        "http://yuk-design.com/"
+    ]
+
     for (let ax = 0; ax < datagambar.length; ax++) {
         this.getid('galery').innerHTML += `
             <div class="col-sm-4 mb-4">
@@ -117,7 +127,8 @@ project(){
                     <div class="card-body text-center">
                         <div class="thumb" style="--background: url('${path + datagambar[ax]}')"></div>
                         <div class="text-center mt-3">
-                            <span>${datanama[ax]}<span>
+                            <span>${datanama[ax]}<span><br>
+                            <a class="btn btn-primary" href="${link[ax]}">Buka Website</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +160,7 @@ kontak(){
 
     for (let ax = 0; ax < icon.length; ax++) {
         this.getid('kontak-data').innerHTML += `
-            <a href="${link[ax]}" style="cursor:pointer;" class="col-12 mb-4">
+            <a href="${link[ax]}" style="cursor:pointer;" class="col-12 mb-4 fbase">
                 <div class="card">
                     <div class="card-body text-center">
                         <i style="font-size: 20px;" class="${icon[ax]}"></i> ${nama[ax]}
