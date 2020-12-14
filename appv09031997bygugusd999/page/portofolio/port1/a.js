@@ -107,7 +107,7 @@ project(){
         "Glearn",
         "Sipintar",
         "Yuk-design"
-    ]
+    ];
 
 
     for (let ax = 0; ax < datagambar.length; ax++) {
@@ -128,6 +128,26 @@ project(){
 
 }
 
+kontak(){
+    var icon = [
+        'fab fa-telegram',
+        'fab fa-whatsapp',
+        'fab fa-facebook'
+    ];
+
+    for (let ax = 0; ax < icon.length; ax++) {
+        this.getid('kontak-data').innerHTML += `
+            <div style="cursor:pointer;" class="col-12 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i style="font-size: 20px;" class="${icon[ax]}"></i>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+}
 
 run(){
     this.timeshow();
@@ -163,5 +183,6 @@ run(){
         'font-size': 'calc(20px + 1.5vw)'
     })
     this.keahlian();
-    this.project()
+    this.project();
+    this.kontak();
 }
