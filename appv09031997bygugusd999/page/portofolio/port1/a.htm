@@ -23,6 +23,35 @@
     .line-nav li {
         border-bottom: 1px solid #777777;
     }
+
+
+    .whatsapp-button {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 987px) {
+        .whatsapp-button:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            display: inline-flex;
+            z-index: 99;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            bottom: 10px;
+            right: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light text-white bg-blue-light fixed-top">
@@ -160,3 +189,7 @@
         </div>
     </div>
 </div>
+<a class="whatsapp-button" href="https://wa.me/+6285800455338">
+    <i class="fab fa-whatsapp" style="font-size: 30px;">
+    </i>
+</a>
