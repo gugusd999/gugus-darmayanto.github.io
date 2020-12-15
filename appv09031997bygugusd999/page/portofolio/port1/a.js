@@ -110,6 +110,7 @@ project(){
     var path = './asset/project-pernah-dibuat/';
 
     var datagambar = [
+        "siaputbk.png",
         "bpkbmotorku.png",
         "ekonseling.png",
         "manusantara.png",
@@ -120,6 +121,7 @@ project(){
     ];
 
     var datanama = [
+        "Siap Utbk",
         "BPKB Motorku",
         "Ekonseling",
         "Manusantara",
@@ -131,6 +133,7 @@ project(){
 
 
     var link = [
+        "https://siaputbk.id",
         "http://bpkbmotorku.com/",
         "http://ekonseling.yuk-design.com/ekonseling/",
         "http://manusantara.com/",
