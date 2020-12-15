@@ -142,7 +142,7 @@ project(){
 
     for (let ax = 0; ax < datagambar.length; ax++) {
         this.getid('galery').innerHTML += `
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div class="card">
                     <div class="card-body text-center">
                         <div class="thumb" style="--background: url('${path + datagambar[ax]}')"></div>

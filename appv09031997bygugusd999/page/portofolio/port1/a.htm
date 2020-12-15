@@ -15,6 +15,14 @@
     .fbase:hover .card {
         background-color: lightgreen;
     }
+
+    .line-nav li:nth-child(1) {
+        border-top: 1px solid #777777;
+    }
+
+    .line-nav li {
+        border-bottom: 1px solid #777777;
+    }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light text-white bg-blue-light fixed-top">
@@ -126,22 +134,25 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <ul class="nav flex-column">
+                <ul class="nav flex-column line-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#home">Home <span
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#home">
+                            <i style="font-size: 20px;" class="fas fa-home"></i> Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;"
-                            href="#keahlian-scroll">Keahlian
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#keahlian-scroll">
+                            <i style="font-size: 20px;" class="fa fa-cogs"></i> Keahlian
                             <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#galeri">Galeri Karya
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#galeri">
+                            <i style="font-size: 20px;" class="fa fa-images"></i> Galeri Karya
                             <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#kontak">Kontak <span
+                        <a class="nav-link" onclick="cf.fn('scrollb', this); return false;" href="#kontak">
+                            <i style="font-size: 20px;" class="fa fa-phone"></i> Kontak <span
                                 class="sr-only">(current)</span></a>
                     </li>
                 </ul>
