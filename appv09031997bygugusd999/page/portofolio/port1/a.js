@@ -204,7 +204,7 @@ run(){
         'display': 'flex',
         'align-item': 'center'
     })
-    $("#me").css({ "max-width": "320px", "width": "100%" });
+    $("#me").css({ "max-width": "250px", "width": "100%", "border": "10px solid lightblue", "box-shadow": "2px 2px 5px #777777" });
     $(".bg-blue-light").css({
         'background-color': '#f6f7fb'
     })
