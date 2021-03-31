@@ -116,8 +116,6 @@ project(){
         "manusantara.png",
         "sinarmutiarapalem.png",
         "glearn-2.png",
-        "sipintar.png",
-        "yuk-design.png"
     ];
 
     var datanama = [
@@ -127,20 +125,16 @@ project(){
         "Manusantara",
         "Sinarmutiarapalem",
         "Glearn",
-        "Sipintar",
-        "Yuk-design"
     ];
 
 
     var link = [
-        "https://siaputbk.id",
+        "http://utbkonline.andastore.xyz/",
         "http://bpkbmotorku.com/",
         "http://ekonseling.yuk-design.com/ekonseling/",
         "http://manusantara.com/",
         "http://sinarmutiarapalem.com/",
         "https://gugusd999.github.io/glearn.github.io/#/",
-        "http://sipintar.yuk-design.com/",
-        "http://yuk-design.com/"
     ]
 
     for (let ax = 0; ax < datagambar.length; ax++) {
